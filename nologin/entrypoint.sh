@@ -16,6 +16,6 @@ set -x
 export USER_ID=$(id -u)
 export GROUP_ID=$(id -g)
 
-# Set bash like default shell
+# Set nologin like default shell
 NEW_PASSWD_CONTENT=$(cat /etc/passwd | sed "s/\(.*:.*:${USER_ID}:${GROUP_ID}:.*:.*:\).*/\1\/sbin\/nologin/")
 echo "${NEW_PASSWD_CONTENT}" > /etc/passwd
