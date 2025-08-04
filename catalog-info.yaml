@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  # Ім'я компонента береться з назви репозиторію
+  name: shellImages
+  annotations:
+    # project-slug має бути у форматі OWNER_NAME/REPO_NAME
+    github.com/project-slug: AndrienkoAleksandr/shellImages
+spec:
+  # Тип компонента за замовчуванням 'other', але ви можете змінити його на 'service', 'website' тощо.
+  type: other
+  lifecycle: unknown
+  owner:  user:default/andrienkoaleksandr
